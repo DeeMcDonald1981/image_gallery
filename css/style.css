@@ -91,6 +91,7 @@
     border-bottom: 2px solid red; } }
 
 .hero {
+  position: relative;
   margin-top: 1.2rem;
   background: linear-gradient(to bottom right, #eb4d4b, rgba(235, 77, 75, 0.8)), url(../img/human-2944064_1920.jpg) center no-repeat;
   height: 600px;
@@ -99,6 +100,25 @@
 @media screen and (max-width: 768px) {
   .hero {
     height: 300px; } }
+
+.hero h1 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  line-height: 2.5;
+  letter-spacing: 7px;
+  font-size: 2.5rem; }
+
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.2rem;
+    line-height: 2.5;
+    letter-spacing: 2px; } }
 
 section {
   margin-top: 5rem; }
